@@ -1,0 +1,21 @@
+type User {
+  id: Int!
+  name: String!
+}
+
+type Job {
+  name: String!
+  user_id: Int!
+  description: String!
+}
+
+type Query {
+  users(limit: Int) : [User]!,
+  getUser(id: Int!): User,
+  getJob(user_id: Int!): Job
+}
+
+type Mutation {
+  addUser(id: Int!, name: String!): [User],
+  deleteUser(id: Int!): [User]
+}
