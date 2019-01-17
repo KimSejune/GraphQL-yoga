@@ -43,7 +43,7 @@ const addUser = (id, name) => {
     users.push(newUser)
     return users;
   }
-  console.log('id 존재해요!')
+  console.log('ID IS EXIST!')
 };
 
 const deleteUserById = (id) => {
@@ -52,7 +52,7 @@ const deleteUserById = (id) => {
     users = deleteUser;
     return users;
   }
-  console.log('id값이 없습니다!')
+  console.log('ID IS NULL')
 }
 
 module.exports = { getUsers, getUserById, getJobById, addUser, deleteUserById };
